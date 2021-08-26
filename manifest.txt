@@ -1,0 +1,3 @@
+description=Aiml bot brain for Work-E robot
+locale=en-US
+image=bot.png
