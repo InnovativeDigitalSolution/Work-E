@@ -190,13 +190,13 @@ upper = <set var="upper"><srai>LARGEROF <star index="2"/> <star index="4"/></sra
 </set>
 </think>
 
-<learn>
+<learnf>
 <category>
 <pattern>PICKNUMBER</pattern>
 <template><random><eval><get var="lilist"/></eval></random>
 </template>
 </category>
-</learn>
+</learnf>
 
 <set name="pick"><srai>PICKNUMBER</srai></set></template>
 </category>
@@ -305,19 +305,19 @@ upper = <set var="upper"><srai>LARGEROF <star index="2"/> <star index="4"/></sra
 </category>
 <category><pattern>DELETE MY * LIST</pattern>
 <template>Deleting your list.
-<learn>
+<learnf>
 <category><pattern>MY <eval><star/></eval> LIST</pattern>
 <template>NIL</template>
 </category>
-</learn></template>
+</learnf></template>
 </category>
 <category><pattern>DELETE MY LIST</pattern>
 <template>Deleting your list.
-<learn>
+<learnf>
 <category><pattern>MYLIST</pattern>
 <template>NIL</template>
 </category>
-</learn></template>
+</learnf></template>
 </category>
 <category><pattern>FIRSTLETTER *</pattern>
 <template><star/></template>
@@ -449,7 +449,7 @@ upper = <set var="upper"><srai>LARGEROF <star index="2"/> <star index="4"/></sra
 <template>FALSE</template>
 </category>
 <category><pattern>LEARNEQUAL * EQUALTO *</pattern>
-<template><learn>
+<template><learnf>
 <category>
 <pattern>TESTEQUAL <eval><star/></eval> EQUALTO <eval><star/></eval></pattern>
 <template>true</template>
@@ -462,7 +462,7 @@ upper = <set var="upper"><srai>LARGEROF <star index="2"/> <star index="4"/></sra
 <pattern>TESTEQUAL * EQUALTO <eval><star/></eval></pattern>
 <template>false</template>
 </category>
-</learn></template>
+</learnf></template>
 </category>
 <category><pattern>LOGICALAND FALSE</pattern>
 <template>FALSE</template>

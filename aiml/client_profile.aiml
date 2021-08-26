@@ -241,7 +241,7 @@ I call you <get name="name"/>.</template>
 <set><name><get var="animal"/></name><get var="name"/></set>
 </think>
 What is it like having a pet <get var="animal"/>?
-<learn>
+<learnf>
 <category>
 <pattern>MY <eval><get var="animal"/></eval></pattern>
 <template><eval><get var="name"/></eval></template>
@@ -254,7 +254,7 @@ What is it like having a pet <get var="animal"/>?
 <pattern><eval><get var="name"/></eval></pattern>
 <template>Your <eval><get var="animal"/></eval>.</template>
 </category>
-</learn></template>
+</learnf></template>
 </category>
 <category><pattern>MY DOG</pattern>
 <template><get name="dog"/></template>

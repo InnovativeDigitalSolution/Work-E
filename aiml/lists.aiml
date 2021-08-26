@@ -47,21 +47,21 @@
 </category>
 <category><pattern>ADD _ TO MY LIST</pattern>
 <template>I've added <star/> to your list.
-<learn>
+<learnf>
 <category><pattern>MYLIST</pattern>
 <template><eval><srai>CONS <star/> <srai>MYLIST</srai></srai></eval>
 </template>
 </category>
-</learn></template>
+</learnf></template>
 </category>
 <category><pattern>ADD _ TO MY * LIST</pattern>
 <template>I've added <star/> to your <star index="2"/> list.
-<learn>
+<learnf>
 <category><pattern>MY <eval><star index="2"/></eval> LIST</pattern>
 <template><eval><srai>CONS <star/> <srai>MY <star index="2"/> LIST</srai></srai></eval>
 </template>
 </category>
-</learn></template>
+</learnf></template>
 </category>
 <category><pattern>LISTCAR *</pattern>
 <template>undefined</template>
@@ -135,19 +135,19 @@
 </category>
 <category><pattern>MAKE A * LIST</pattern>
 <template>Initializing your <star/> list.
-<learn>
+<learnf>
 <category><pattern>MY <eval><star/></eval> LIST</pattern>
 <template>NIL</template>
 </category>
-</learn></template>
+</learnf></template>
 </category>
 <category><pattern>MAKE A LIST</pattern>
 <template>Initializing your list.
-<learn>
+<learnf>
 <category><pattern>MYLIST</pattern>
 <template>NIL</template>
 </category>
-</learn></template>
+</learnf></template>
 </category>
 <category><pattern>READ MY * LIST</pattern>
 <template>Here is your <star/> list: <srai>COMMASEPARATE <srai>MY <star/> LIST</srai></srai></template>
@@ -166,11 +166,11 @@ List value=<srai><get name="listname"/></srai>.
 -->
 <condition name="isamember">
 <li value="true">Taking <star/> off your list.
-<learn>
+<learnf>
 <category><pattern><eval><get name="listname"/></eval></pattern>
 <template><eval><srai>REMOVEITEM <star/> FROM LIST <srai><get name="listname"/></srai></srai></eval></template>
 </category>
-</learn>
+</learnf>
 </li>
 <li>
 <oob><dialog>
