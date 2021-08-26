@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<category><pattern>WHAT IS A CAT</pattern>
+<template>a cat is a mammal.</template>
+</category>
+<category><pattern>WHAT IS A MAMMAL</pattern>
+<template>a cat is a mammal.</template>
+</category>
+<category><pattern>IS A CAT A MAMMAL</pattern>
+<template>Yes.</template>
+</category>
+</aiml>
